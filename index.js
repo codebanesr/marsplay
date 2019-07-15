@@ -5,7 +5,7 @@ const app = express();
 
 const db = connect();
 
-// users and post had dependency , they too could be called in the generic method itself
+/** users and post had dependency , they too could be called in the generic method itself*/
 require('./table-mappings/generic')(db)
 
 

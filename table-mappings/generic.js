@@ -2,11 +2,12 @@ const axios = require("axios");
 const query = require("../queries/query");
 
 
-// Add as many tables as you want in this, as long as a table doesnot have a dependency
-// this will add all data
-// just add users, posts and anything you want to insert into this array and it will start
-// to work
-
+/**
+ * Add as many tables as you want in this, as long as a table doesnot have a dependency
+ *  this will add all data
+ * just add users, posts and anything you want to insert into this array and it will start
+ * to work
+ */
 const tableName = ["users", "posts", "comments", "albums", "todos"];
 // photos is failing for some reason, I will check it if you insist
 module.exports = async function(db) {

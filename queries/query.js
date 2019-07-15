@@ -1,3 +1,4 @@
+/**contains insert query for all table statements */
 module.exports = {
   comments:
     "INSERT INTO comments(id, post_id, name, email, body) VALUES(${id}, ${postId}, ${name}, ${email}, ${body})",
